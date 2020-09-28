@@ -1,5 +1,6 @@
 import Endpoint from './endpoint';
 import ApiUtils from './utils';
+import Drivers from './drivers';
 
 export default class Service {
   constructor({ name, endpoints, api, path, client, interceptors }) {
@@ -13,6 +14,10 @@ export default class Service {
 
   get interceptors() {
     return [...new Set([...this._interceptors, ...this.api.interceptors])];
+  }
+
+  get driver() {
+    return this.api.driver || Drivers.DEFAULT;
   }
 
   getUrl() {

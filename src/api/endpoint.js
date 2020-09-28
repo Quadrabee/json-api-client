@@ -1,6 +1,6 @@
-import axios from 'axios';
 import _ from 'lodash';
 import ApiUtils from './utils';
+import Drivers from './drivers';
 import Qs from 'qs';
 
 const PARAMS_REGEX = /:([a-zA-Z_]+)/g;
@@ -17,6 +17,10 @@ export default class Endpoint {
 
   get api() {
     return this.service.api;
+  }
+
+  get driver() {
+    return this.service.driver || Drivers.DEFAULT;
   }
 
   get interceptors() {
@@ -111,7 +115,7 @@ export default class Endpoint {
       payload.data = data;
     }
     return this.onBeforeRequest(payload)
-      .then(payload => axios(payload))
+      .then(payload => this.driver.request(payload))
       .then(res => this.onAfterRequest(res))
       .then(res => res.data)
       .catch(err => {

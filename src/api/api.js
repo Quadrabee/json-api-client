@@ -1,11 +1,13 @@
 import _ from 'lodash';
 import Service from './service';
 import ApiUtils from './utils';
+import Drivers from './drivers';
 
 export default class Api {
-  constructor({ baseUrl, interceptors }) {
+  constructor({ baseUrl, interceptors, driver }) {
     this.baseUrl = baseUrl;
     this.services = {};
+    this.driver = driver || Drivers.DEFAULT;
     this.interceptors = interceptors || [];
   }
 

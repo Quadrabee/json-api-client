@@ -27,6 +27,8 @@ const TokenInjector = FlairApi.factorInterceptor('TokenInjector', {
 const EntitiesService = FlairApi.addService('EntitiesService', {
   path: '/entities',
   interceptors: (interceptors) => ([
+    TokenInjector,
+    TokenInterceptor
     // ability to change the collection of enabled interceptors
     // contract: return collection of interceptors
   ])
