@@ -6,3 +6,4 @@ node_modules/
 .nyc_output
 node_modules
 coverage
+tests/test-results.xml
