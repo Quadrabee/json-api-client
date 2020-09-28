@@ -1,6 +1,10 @@
 import { expect } from 'chai';
 import { Entity, Collection, Relationships } from '../../src/jsonapi';
-import { Company } from '../../src/entities';
+
+class SubEntityClass extends Entity {
+}
+
+Entity.registerType('SubEntityClass', SubEntityClass);
 
 describe('Entity', () => {
   const entityJson = {
@@ -88,16 +92,16 @@ describe('Entity', () => {
       expect(entity.isProxiedEntity).to.eql(true);
     });
     it('allows you to specify the subtype (string)', () => {
-      const entity = Entity.factor({}, 'Company');
+      const entity = Entity.factor({}, 'SubEntityClass');
       expect(entity.isProxiedEntity).to.eql(true);
       expect(entity).to.an.instanceOf(Entity);
-      expect(entity).to.an.instanceOf(Company);
+      expect(entity).to.an.instanceOf(SubEntityClass);
     });
     it('allows you to specify the subtype (class)', () => {
-      const entity = Entity.factor({}, Company);
+      const entity = Entity.factor({}, SubEntityClass);
       expect(entity.isProxiedEntity).to.eql(true);
       expect(entity).to.an.instanceOf(Entity);
-      expect(entity).to.an.instanceOf(Company);
+      expect(entity).to.an.instanceOf(SubEntityClass);
     });
     it('allows you to specify only the loader', () => {
       const loader = () => {};
@@ -115,18 +119,18 @@ describe('Entity', () => {
     });
     it('allows you to specify the doc, loader and type (string)', () => {
       const loader = () => {};
-      const entity = Entity.factor({}, loader, 'Company');
+      const entity = Entity.factor({}, loader, 'SubEntityClass');
       expect(entity.isProxiedEntity).to.eql(true);
       expect(entity).to.an.instanceOf(Entity);
-      expect(entity).to.an.instanceOf(Company);
+      expect(entity).to.an.instanceOf(SubEntityClass);
       expect(entity.loader).to.eql(loader);
     });
     it('allows you to specify the doc, loader and type (class)', () => {
       const loader = () => {};
-      const entity = Entity.factor({}, loader, Company);
+      const entity = Entity.factor({}, loader, SubEntityClass);
       expect(entity.isProxiedEntity).to.eql(true);
       expect(entity).to.an.instanceOf(Entity);
-      expect(entity).to.an.instanceOf(Company);
+      expect(entity).to.an.instanceOf(SubEntityClass);
       expect(entity.loader).to.eql(loader);
     });
     it('supports subclassing', () => {
