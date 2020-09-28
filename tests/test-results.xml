@@ -1,0 +1,481 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="0.6420" tests="168" failures="0" skipped="2">
+  <testsuite name="Root Suite" timestamp="2020-09-24T10:17:56" tests="0" time="0.0000" failures="0">
+  </testsuite>
+  <testsuite name="the Api class" timestamp="2020-09-24T10:17:56" tests="0" file="/Users/louislambeau/Work/Quadrabee/json-api-client/tests/api/api.spec.js" time="0.0000" failures="0">
+  </testsuite>
+  <testsuite name="#addService" timestamp="2020-09-24T10:17:56" tests="3" file="/Users/louislambeau/Work/Quadrabee/json-api-client/tests/api/api.spec.js" time="0.0000" failures="0">
+    <testcase name="the Api class #addService returns a Service instance" time="0.0000" classname="returns a Service instance">
+    </testcase>
+    <testcase name="the Api class #addService adds the service to the list of services" time="0.0000" classname="adds the service to the list of services">
+    </testcase>
+    <testcase name="the Api class #addService passes the correct reference to the api object" time="0.0000" classname="passes the correct reference to the api object">
+    </testcase>
+  </testsuite>
+  <testsuite name=".fromJsonDef" timestamp="2020-09-24T10:17:56" tests="4" file="/Users/louislambeau/Work/Quadrabee/json-api-client/tests/api/api.spec.js" time="0.0010" failures="0">
+    <testcase name="the Api class .fromJsonDef returns an Api instance" time="0.0000" classname="returns an Api instance">
+    </testcase>
+    <testcase name="the Api class .fromJsonDef supports empty list of services" time="0.0000" classname="supports empty list of services">
+    </testcase>
+    <testcase name="the Api class .fromJsonDef creates one Service instance per service definition" time="0.0000" classname="creates one Service instance per service definition">
+    </testcase>
+    <testcase name="the Api class .fromJsonDef adds the endpoint to the created Services" time="0.0010" classname="adds the endpoint to the created Services">
+    </testcase>
+  </testsuite>
+  <testsuite name="the Endpoint class" timestamp="2020-09-24T10:17:56" tests="5" file="/Users/louislambeau/Work/Quadrabee/json-api-client/tests/api/endpoint.spec.js" time="0.3190" failures="0">
+    <testcase name="the Endpoint class returns a Promise" time="0.0020" classname="returns a Promise">
+    </testcase>
+    <testcase name="the Endpoint class calls axios with the correct parameters" time="0.1070" classname="calls axios with the correct parameters">
+    </testcase>
+    <testcase name="the Endpoint class resolves the promise, passing the response&apos;s body, if axios succeeds" time="0.1070" classname="resolves the promise, passing the response&apos;s body, if axios succeeds">
+    </testcase>
+    <testcase name="the Endpoint class rejects the promise if axios fails" time="0.1030" classname="rejects the promise if axios fails">
+    </testcase>
+  </testsuite>
+  <testsuite name="calls the interceptors before sending the request, when present" timestamp="2020-09-24T10:17:56" tests="2" file="/Users/louislambeau/Work/Quadrabee/json-api-client/tests/api/endpoint.spec.js" time="0.2080" failures="0">
+    <testcase name="the Endpoint class calls the interceptors before sending the request, when present calls the #onBeforeRequest of the interceptors" time="0.1060" classname="calls the #onBeforeRequest of the interceptors">
+    </testcase>
+    <testcase name="the Endpoint class calls the interceptors before sending the request, when present uses the results from interceptors" time="0.1020" classname="uses the results from interceptors">
+    </testcase>
+  </testsuite>
+  <testsuite name="the Service class" timestamp="2020-09-24T10:17:56" tests="0" file="/Users/louislambeau/Work/Quadrabee/json-api-client/tests/api/service.spec.js" time="0.0000" failures="0">
+  </testsuite>
+  <testsuite name="#getUrl" timestamp="2020-09-24T10:17:56" tests="1" file="/Users/louislambeau/Work/Quadrabee/json-api-client/tests/api/service.spec.js" time="0.0000" failures="0">
+  </testsuite>
+  <testsuite name="#addEndpoint" timestamp="2020-09-24T10:17:56" tests="3" file="/Users/louislambeau/Work/Quadrabee/json-api-client/tests/api/service.spec.js" time="0.0000" failures="0">
+    <testcase name="the Service class #addEndpoint returns an Endpoint instance" time="0.0000" classname="returns an Endpoint instance">
+    </testcase>
+    <testcase name="the Service class #addEndpoint adds the endpoint to the list of endpoints" time="0.0000" classname="adds the endpoint to the list of endpoints">
+    </testcase>
+    <testcase name="the Service class #addEndpoint passes the correct reference to the service instance" time="0.0000" classname="passes the correct reference to the service instance">
+    </testcase>
+  </testsuite>
+  <testsuite name="ApiUtils" timestamp="2020-09-24T10:17:56" tests="0" file="/Users/louislambeau/Work/Quadrabee/json-api-client/tests/api/utils.spec.js" time="0.0000" failures="0">
+  </testsuite>
+  <testsuite name="#concat" timestamp="2020-09-24T10:17:56" tests="1" file="/Users/louislambeau/Work/Quadrabee/json-api-client/tests/api/utils.spec.js" time="0.0000" failures="0">
+    <testcase name="ApiUtils #concat helps concatenating urls" time="0.0000" classname="helps concatenating urls">
+    </testcase>
+  </testsuite>
+  <testsuite name="#url" timestamp="2020-09-24T10:17:56" tests="4" file="/Users/louislambeau/Work/Quadrabee/json-api-client/tests/api/utils.spec.js" time="0.0000" failures="0">
+    <testcase name="ApiUtils #url returns an instance of URL" time="0.0000" classname="returns an instance of URL">
+    </testcase>
+    <testcase name="ApiUtils #url takes base url as first param and relative url as second" time="0.0000" classname="takes base url as first param and relative url as second">
+    </testcase>
+    <testcase name="ApiUtils #url supports var args" time="0.0000" classname="supports var args">
+    </testcase>
+    <testcase name="ApiUtils #url supports URL instances as base Url" time="0.0000" classname="supports URL instances as base Url">
+    </testcase>
+  </testsuite>
+  <testsuite name="#replaceParams" timestamp="2020-09-24T10:17:56" tests="9" file="/Users/louislambeau/Work/Quadrabee/json-api-client/tests/api/utils.spec.js" time="0.0010" failures="0">
+    <testcase name="ApiUtils #replaceParams Add filter to the self link" time="0.0010" classname="Add filter to the self link">
+    </testcase>
+    <testcase name="ApiUtils #replaceParams Add filter to the self link and delete the params which are in self link" time="0.0000" classname="Add filter to the self link and delete the params which are in self link">
+    </testcase>
+    <testcase name="ApiUtils #replaceParams Add filter to the self link when it already exists" time="0.0000" classname="Add filter to the self link when it already exists">
+    </testcase>
+    <testcase name="ApiUtils #replaceParams Not add param to the self link when it&apos;s only space or empty" time="0.0000" classname="Not add param to the self link when it&apos;s only space or empty">
+    </testcase>
+    <testcase name="ApiUtils #replaceParams Delete param in the self link when it not exists in the filter" time="0.0000" classname="Delete param in the self link when it not exists in the filter">
+    </testcase>
+    <testcase name="ApiUtils #replaceParams Add value 0 to params is possible" time="0.0000" classname="Add value 0 to params is possible">
+    </testcase>
+    <testcase name="ApiUtils #replaceParams Add value false to params is possible" time="0.0000" classname="Add value false to params is possible">
+    </testcase>
+    <testcase name="ApiUtils #replaceParams Add value null to params is not possible" time="0.0000" classname="Add value null to params is not possible">
+    </testcase>
+    <testcase name="ApiUtils #replaceParams Add value undefined to params is not possible" time="0.0000" classname="Add value undefined to params is not possible">
+    </testcase>
+  </testsuite>
+  <testsuite name="FlairClient#ts" timestamp="2020-09-24T10:17:57" tests="2" file="/Users/louislambeau/Work/Quadrabee/json-api-client/tests/client/test_ts.js" time="0.0020" failures="0">
+    <testcase name="FlairClient#ts keeps strings unless necessary" time="0.0020" classname="keeps strings unless necessary">
+    </testcase>
+    <testcase name="FlairClient#ts supports variables and returns functions in such case" time="0.0000" classname="supports variables and returns functions in such case">
+    </testcase>
+  </testsuite>
+  <testsuite name="Company" timestamp="2020-09-24T10:17:57" tests="0" file="/Users/louislambeau/Work/Quadrabee/json-api-client/tests/entities/company.spec.js" time="0.0000" failures="0">
+  </testsuite>
+  <testsuite name="#hasFinancialHistory" timestamp="2020-09-24T10:17:57" tests="3" file="/Users/louislambeau/Work/Quadrabee/json-api-client/tests/entities/company.spec.js" time="0.0020" failures="0">
+    <testcase name="Company #hasFinancialHistory returns false when the company doesn&apos;t have any history" time="0.0010" classname="returns false when the company doesn&apos;t have any history">
+    </testcase>
+    <testcase name="Company #hasFinancialHistory returns false when the company doesn&apos;t have financial history" time="0.0000" classname="returns false when the company doesn&apos;t have financial history">
+    </testcase>
+    <testcase name="Company #hasFinancialHistory returns true when the company does have financial history" time="0.0010" classname="returns true when the company does have financial history">
+    </testcase>
+  </testsuite>
+  <testsuite name="#hasRiskHistory" timestamp="2020-09-24T10:17:57" tests="3" file="/Users/louislambeau/Work/Quadrabee/json-api-client/tests/entities/company.spec.js" time="0.0000" failures="0">
+    <testcase name="Company #hasRiskHistory returns false when the company doesn&apos;t have any history" time="0.0000" classname="returns false when the company doesn&apos;t have any history">
+    </testcase>
+    <testcase name="Company #hasRiskHistory returns false when the company doesn&apos;t have riskProfile history" time="0.0000" classname="returns false when the company doesn&apos;t have riskProfile history">
+    </testcase>
+    <testcase name="Company #hasRiskHistory returns true when the company does have financial history" time="0.0000" classname="returns true when the company does have financial history">
+    </testcase>
+  </testsuite>
+  <testsuite name="#hasFinancialAttribut" timestamp="2020-09-24T10:17:57" tests="2" file="/Users/louislambeau/Work/Quadrabee/json-api-client/tests/entities/company.spec.js" time="0.0000" failures="0">
+    <testcase name="Company #hasFinancialAttribut returns false when the history doesn&apos;t have any financial attribute" time="0.0000" classname="returns false when the history doesn&apos;t have any financial attribute">
+    </testcase>
+    <testcase name="Company #hasFinancialAttribut returns true when the history does have financial attribute" time="0.0000" classname="returns true when the history does have financial attribute">
+    </testcase>
+  </testsuite>
+  <testsuite name="#getFinancialField" timestamp="2020-09-24T10:17:57" tests="2" file="/Users/louislambeau/Work/Quadrabee/json-api-client/tests/entities/company.spec.js" time="0.0000" failures="0">
+    <testcase name="Company #getFinancialField returns undefined when the attribute doesn&apos;t exist" time="0.0000" classname="returns undefined when the attribute doesn&apos;t exist">
+    </testcase>
+    <testcase name="Company #getFinancialField returns value when the attribute exist" time="0.0000" classname="returns value when the attribute exist">
+    </testcase>
+  </testsuite>
+  <testsuite name="#getSubrisksHistory" timestamp="2020-09-24T10:17:57" tests="3" file="/Users/louislambeau/Work/Quadrabee/json-api-client/tests/entities/company.spec.js" time="0.0020" failures="0">
+    <testcase name="Company #getSubrisksHistory returns nothing when the company doesn&apos;t have any history" time="0.0010" classname="returns nothing when the company doesn&apos;t have any history">
+    </testcase>
+    <testcase name="Company #getSubrisksHistory returns nothing when the company doesn&apos;t have riskProfile history" time="0.0000" classname="returns nothing when the company doesn&apos;t have riskProfile history">
+    </testcase>
+    <testcase name="Company #getSubrisksHistory returns an object when the attribute exist" time="0.0010" classname="returns an object when the attribute exist">
+    </testcase>
+  </testsuite>
+  <testsuite name="Company.factor" timestamp="2020-09-24T10:17:57" tests="1" file="/Users/louislambeau/Work/Quadrabee/json-api-client/tests/entities/company.spec.js" time="0.0010" failures="0">
+    <testcase name="Company Company.factor returns an instance of company with proper sub Entities" time="0.0010" classname="returns an instance of company with proper sub Entities">
+    </testcase>
+  </testsuite>
+  <testsuite name="MonitoredCompany" timestamp="2020-09-24T10:17:57" tests="0" file="/Users/louislambeau/Work/Quadrabee/json-api-client/tests/entities/monitoredCompany.spec.js" time="0.0000" failures="0">
+  </testsuite>
+  <testsuite name="#getRiskGlobal" timestamp="2020-09-24T10:17:57" tests="3" file="/Users/louislambeau/Work/Quadrabee/json-api-client/tests/entities/monitoredCompany.spec.js" time="0.0010" failures="0">
+    <testcase name="MonitoredCompany #getRiskGlobal returns nothing when the monitoredCompany doesn&apos;t have any globalHistory" time="0.0000" classname="returns nothing when the monitoredCompany doesn&apos;t have any globalHistory">
+    </testcase>
+    <testcase name="MonitoredCompany #getRiskGlobal returns only objects which don&apos;t have a null score when the monitoredCompany has globalHistory" time="0.0000" classname="returns only objects which don&apos;t have a null score when the monitoredCompany has globalHistory">
+    </testcase>
+    <testcase name="MonitoredCompany #getRiskGlobal returns the same array when the monitoredCompany has globalHistory" time="0.0010" classname="returns the same array when the monitoredCompany has globalHistory">
+    </testcase>
+  </testsuite>
+  <testsuite name="RiskIndicator" timestamp="2020-09-24T10:17:57" tests="0" file="/Users/louislambeau/Work/Quadrabee/json-api-client/tests/entities/riskIndicator.spec.js" time="0.0000" failures="0">
+  </testsuite>
+  <testsuite name="#getRiskHistory" timestamp="2020-09-24T10:17:57" tests="3" file="/Users/louislambeau/Work/Quadrabee/json-api-client/tests/entities/riskIndicator.spec.js" time="0.0000" failures="0">
+    <testcase name="RiskIndicator #getRiskHistory returns nothing when the riskIndicator doesn&apos;t have any history" time="0.0000" classname="returns nothing when the riskIndicator doesn&apos;t have any history">
+    </testcase>
+    <testcase name="RiskIndicator #getRiskHistory returns only objects which don&apos;t have a null score when the riskIndicator has history" time="0.0000" classname="returns only objects which don&apos;t have a null score when the riskIndicator has history">
+    </testcase>
+    <testcase name="RiskIndicator #getRiskHistory returns the same array when the riskIndicator has history" time="0.0000" classname="returns the same array when the riskIndicator has history">
+    </testcase>
+  </testsuite>
+  <testsuite name="the I18NStaticSource class" timestamp="2020-09-24T10:17:57" tests="0" file="/Users/louislambeau/Work/Quadrabee/json-api-client/tests/i18n/static.i18n.source.spec.js" time="0.0000" failures="0">
+  </testsuite>
+  <testsuite name="#load" timestamp="2020-09-24T10:17:57" tests="2" file="/Users/louislambeau/Work/Quadrabee/json-api-client/tests/i18n/static.i18n.source.spec.js" time="0.0000" failures="0">
+    <testcase name="the I18NStaticSource class #load returns a Promise" time="0.0000" classname="returns a Promise">
+    </testcase>
+    <testcase name="the I18NStaticSource class #load provides an array of translation for keys it knows (single key)" time="0.0000" classname="provides an array of translation for keys it knows (single key)">
+    </testcase>
+  </testsuite>
+  <testsuite name="TranslationGroup" timestamp="2020-09-24T10:17:57" tests="6" file="/Users/louislambeau/Work/Quadrabee/json-api-client/tests/i18n/translate.group.spec.js" time="0.0000" failures="0">
+    <testcase name="TranslationGroup should not expose any attribute other than the default (top) keys" time="0.0000" classname="should not expose any attribute other than the default (top) keys">
+    </testcase>
+    <testcase name="TranslationGroup should expose a getter for the namespace" time="0.0000" classname="should expose a getter for the namespace">
+    </testcase>
+    <testcase name="TranslationGroup should expose all default values if no translations are set" time="0.0000" classname="should expose all default values if no translations are set">
+    </testcase>
+    <testcase name="TranslationGroup should support templated values and provide an instantiator function for it" time="0.0000" classname="should support templated values and provide an instantiator function for it">
+    </testcase>
+    <testcase name="TranslationGroup should always keep default values when provided with incomplete translations" time="0.0000" classname="should always keep default values when provided with incomplete translations">
+    </testcase>
+    <testcase name="TranslationGroup should accept additional translations even if no defaults were defined" time="0.0000" classname="should accept additional translations even if no defaults were defined">
+    </testcase>
+  </testsuite>
+  <testsuite name="Collection" timestamp="2020-09-24T10:17:57" tests="0" file="/Users/louislambeau/Work/Quadrabee/json-api-client/tests/jsonapi/collection.spec.js" time="0.0000" failures="0">
+  </testsuite>
+  <testsuite name="when used without a loader" timestamp="2020-09-24T10:17:57" tests="3" file="/Users/louislambeau/Work/Quadrabee/json-api-client/tests/jsonapi/collection.spec.js" time="0.0000" failures="0">
+    <testcase name="Collection when used without a loader works as expected" time="0.0000" classname="works as expected">
+    </testcase>
+    <testcase name="Collection when used without a loader provides autolinking if children have no link" time="0.0000" classname="provides autolinking if children have no link">
+    </testcase>
+    <testcase name="Collection when used without a loader caches the items computation" time="0.0000" classname="caches the items computation">
+    </testcase>
+  </testsuite>
+  <testsuite name="when used with a loader" timestamp="2020-09-24T10:17:57" tests="2" file="/Users/louislambeau/Work/Quadrabee/json-api-client/tests/jsonapi/collection.spec.js" time="0.0000" failures="0">
+    <testcase name="Collection when used with a loader works as expected" time="0.0000" classname="works as expected">
+    </testcase>
+    <testcase name="Collection when used with a loader cleans the items cache when reloading" time="0.0000" classname="cleans the items cache when reloading">
+    </testcase>
+  </testsuite>
+  <testsuite name="#rebindWithArguments" timestamp="2020-09-24T10:17:57" tests="1" file="/Users/louislambeau/Work/Quadrabee/json-api-client/tests/jsonapi/collection.spec.js" time="0.0000" failures="0">
+    <testcase name="Collection #rebindWithArguments works as expected" time="0.0000" classname="works as expected">
+    </testcase>
+  </testsuite>
+  <testsuite name="when used with a rebindable loader" timestamp="2020-09-24T10:17:57" tests="1" file="/Users/louislambeau/Work/Quadrabee/json-api-client/tests/jsonapi/collection.spec.js" time="0.0000" failures="0">
+    <testcase name="Collection when used with a rebindable loader works as expected" time="0.0000" classname="works as expected">
+    </testcase>
+  </testsuite>
+  <testsuite name="#hasPagination" timestamp="2020-09-24T10:17:57" tests="3" file="/Users/louislambeau/Work/Quadrabee/json-api-client/tests/jsonapi/collection.spec.js" time="0.0000" failures="0">
+    <testcase name="Collection #hasPagination return true when the collection has the first link and meta" time="0.0000" classname="return true when the collection has the first link and meta">
+    </testcase>
+    <testcase name="Collection #hasPagination return false when the collection has only the next link" time="0.0000" classname="return false when the collection has only the next link">
+    </testcase>
+    <testcase name="Collection #hasPagination return false when the collection has only the meta" time="0.0000" classname="return false when the collection has only the meta">
+    </testcase>
+  </testsuite>
+  <testsuite name="#next" timestamp="2020-09-24T10:17:57" tests="3" file="/Users/louislambeau/Work/Quadrabee/json-api-client/tests/jsonapi/collection.spec.js" time="0.0000" failures="0">
+    <testcase name="Collection #next returns an error when the collection has no &apos;next&apos; link" time="0.0000" classname="returns an error when the collection has no &apos;next&apos; link">
+    </testcase>
+    <testcase name="Collection #next returns an error when used without a rebindable loader" time="0.0000" classname="returns an error when used without a rebindable loader">
+    </testcase>
+    <testcase name="Collection #next returns a new collection when the collection has next link" time="0.0000" classname="returns a new collection when the collection has next link">
+    </testcase>
+  </testsuite>
+  <testsuite name="#prev" timestamp="2020-09-24T10:17:57" tests="3" file="/Users/louislambeau/Work/Quadrabee/json-api-client/tests/jsonapi/collection.spec.js" time="0.0000" failures="0">
+    <testcase name="Collection #prev returns an error when the collection has no &apos;prev&apos; link" time="0.0000" classname="returns an error when the collection has no &apos;prev&apos; link">
+    </testcase>
+    <testcase name="Collection #prev returns an error when used without a rebindable loader" time="0.0000" classname="returns an error when used without a rebindable loader">
+    </testcase>
+    <testcase name="Collection #prev returns a new collection when the collection has prev link" time="0.0000" classname="returns a new collection when the collection has prev link">
+    </testcase>
+  </testsuite>
+  <testsuite name="#first" timestamp="2020-09-24T10:17:57" tests="3" file="/Users/louislambeau/Work/Quadrabee/json-api-client/tests/jsonapi/collection.spec.js" time="0.0010" failures="0">
+    <testcase name="Collection #first returns an error when the collection has no &apos;first&apos; link" time="0.0000" classname="returns an error when the collection has no &apos;first&apos; link">
+    </testcase>
+    <testcase name="Collection #first returns an error when used without a rebindable loader" time="0.0000" classname="returns an error when used without a rebindable loader">
+    </testcase>
+    <testcase name="Collection #first returns a new collection when the collection has first link" time="0.0010" classname="returns a new collection when the collection has first link">
+    </testcase>
+  </testsuite>
+  <testsuite name="#last" timestamp="2020-09-24T10:17:57" tests="3" file="/Users/louislambeau/Work/Quadrabee/json-api-client/tests/jsonapi/collection.spec.js" time="0.0010" failures="0">
+    <testcase name="Collection #last returns an error when the collection has no &apos;last&apos; link" time="0.0000" classname="returns an error when the collection has no &apos;last&apos; link">
+    </testcase>
+    <testcase name="Collection #last returns an error when used without a rebindable loader" time="0.0010" classname="returns an error when used without a rebindable loader">
+    </testcase>
+    <testcase name="Collection #last returns a new collection when the collection has last link" time="0.0000" classname="returns a new collection when the collection has last link">
+    </testcase>
+  </testsuite>
+  <testsuite name="#loadMore()" timestamp="2020-09-24T10:17:57" tests="4" file="/Users/louislambeau/Work/Quadrabee/json-api-client/tests/jsonapi/collection.spec.js" time="0.0000" failures="0">
+    <testcase name="Collection #loadMore() returns an error when the collection has no next link" time="0.0000" classname="returns an error when the collection has no next link">
+    </testcase>
+    <testcase name="Collection #loadMore() returns an error when used without a rebindable loader" time="0.0000" classname="returns an error when used without a rebindable loader">
+    </testcase>
+    <testcase name="Collection #loadMore() returns the collection with additional data loaded" time="0.0000" classname="returns the collection with additional data loaded">
+    </testcase>
+    <testcase name="Collection #loadMore() can be used twice in a row" time="0.0000" classname="can be used twice in a row">
+    </testcase>
+  </testsuite>
+  <testsuite name="EntityProxy" timestamp="2020-09-24T10:17:57" tests="0" file="/Users/louislambeau/Work/Quadrabee/json-api-client/tests/jsonapi/entity-proxy.spec.js" time="0.0000" failures="0">
+  </testsuite>
+  <testsuite name="constructor" timestamp="2020-09-24T10:17:57" tests="1" file="/Users/louislambeau/Work/Quadrabee/json-api-client/tests/jsonapi/entity-proxy.spec.js" time="0.0000" failures="0">
+    <testcase name="EntityProxy constructor throws errors to document on proper usage" time="0.0000" classname="throws errors to document on proper usage">
+    </testcase>
+  </testsuite>
+  <testsuite name="the special decorators" timestamp="2020-09-24T10:17:57" tests="2" file="/Users/louislambeau/Work/Quadrabee/json-api-client/tests/jsonapi/entity-proxy.spec.js" time="0.0000" failures="0">
+    <testcase name="EntityProxy the special decorators contain isProxiedEntity, with value true" time="0.0000" classname="contain isProxiedEntity, with value true">
+    </testcase>
+    <testcase name="EntityProxy the special decorators contain ._proxiedEntity, with the original instance" time="0.0000" classname="contain ._proxiedEntity, with the original instance">
+    </testcase>
+  </testsuite>
+  <testsuite name="accessing properties (getters)" timestamp="2020-09-24T10:17:57" tests="6" file="/Users/louislambeau/Work/Quadrabee/json-api-client/tests/jsonapi/entity-proxy.spec.js" time="0.0010" failures="0">
+    <testcase name="EntityProxy accessing properties (getters) mimics the class inheritance of the original object" time="0.0000" classname="mimics the class inheritance of the original object">
+    </testcase>
+    <testcase name="EntityProxy accessing properties (getters) proxies to the object for special field `id`" time="0.0000" classname="proxies to the object for special field `id`">
+    </testcase>
+    <testcase name="EntityProxy accessing properties (getters) allows access to the attributes property as a normal object" time="0.0000" classname="allows access to the attributes property as a normal object">
+    </testcase>
+    <testcase name="EntityProxy accessing properties (getters) looks for missing props in attributes" time="0.0000" classname="looks for missing props in attributes">
+    </testcase>
+    <testcase name="EntityProxy accessing properties (getters) attributes properties do shadow entity properties" time="0.0010" classname="attributes properties do shadow entity properties">
+    </testcase>
+    <testcase name="EntityProxy accessing properties (getters) is compatible with tools such as _.get" time="0.0000" classname="is compatible with tools such as _.get">
+    </testcase>
+  </testsuite>
+  <testsuite name="accessing properties (setters)" timestamp="2020-09-24T10:17:57" tests="4" file="/Users/louislambeau/Work/Quadrabee/json-api-client/tests/jsonapi/entity-proxy.spec.js" time="0.0010" failures="0">
+    <testcase name="EntityProxy accessing properties (setters) allows us to erase an existing property" time="0.0000" classname="allows us to erase an existing property">
+    </testcase>
+    <testcase name="EntityProxy accessing properties (setters) allows us to erase an existing attribute" time="0.0010" classname="allows us to erase an existing attribute">
+    </testcase>
+    <testcase name="EntityProxy accessing properties (setters) allows us to create new properties" time="0.0000" classname="allows us to create new properties">
+    </testcase>
+    <testcase name="EntityProxy accessing properties (setters) does not allow us to create new attributes" time="0.0000" classname="does not allow us to create new attributes">
+    </testcase>
+  </testsuite>
+  <testsuite name="accessing properties (delete)" timestamp="2020-09-24T10:17:57" tests="1" file="/Users/louislambeau/Work/Quadrabee/json-api-client/tests/jsonapi/entity-proxy.spec.js" time="0.0010" failures="0">
+    <testcase name="EntityProxy accessing properties (delete) throws an error, entities are immutable" time="0.0010" classname="throws an error, entities are immutable">
+    </testcase>
+  </testsuite>
+  <testsuite name="accessing properties with falsy values" timestamp="2020-09-24T10:17:57" tests="3" file="/Users/louislambeau/Work/Quadrabee/json-api-client/tests/jsonapi/entity-proxy.spec.js" time="0.0000" failures="0">
+    <testcase name="EntityProxy accessing properties with falsy values proxies properly null values" time="0.0000" classname="proxies properly null values">
+    </testcase>
+    <testcase name="EntityProxy accessing properties with falsy values proxies properly 0 values" time="0.0000" classname="proxies properly 0 values">
+    </testcase>
+    <testcase name="EntityProxy accessing properties with falsy values proxies properly false values" time="0.0000" classname="proxies properly false values">
+    </testcase>
+  </testsuite>
+  <testsuite name="interrogating properties (in)" timestamp="2020-09-24T10:17:57" tests="2" file="/Users/louislambeau/Work/Quadrabee/json-api-client/tests/jsonapi/entity-proxy.spec.js" time="0.0000" failures="0">
+    <testcase name="EntityProxy interrogating properties (in) returns true for entity properties" time="0.0000" classname="returns true for entity properties">
+    </testcase>
+    <testcase name="EntityProxy interrogating properties (in) returns true for existing attributes" time="0.0000" classname="returns true for existing attributes">
+    </testcase>
+  </testsuite>
+  <testsuite name="Entity" timestamp="2020-09-24T10:17:57" tests="0" file="/Users/louislambeau/Work/Quadrabee/json-api-client/tests/jsonapi/entity.spec.js" time="0.0000" failures="0">
+  </testsuite>
+  <testsuite name="#factor" timestamp="2020-09-24T10:17:57" tests="9" file="/Users/louislambeau/Work/Quadrabee/json-api-client/tests/jsonapi/entity.spec.js" time="0.0000" failures="0">
+    <testcase name="Entity #factor returns a proxied entity instance" time="0.0000" classname="returns a proxied entity instance">
+    </testcase>
+    <testcase name="Entity #factor allows you to specify the subtype (string)" time="0.0000" classname="allows you to specify the subtype (string)">
+    </testcase>
+    <testcase name="Entity #factor allows you to specify the subtype (class)" time="0.0000" classname="allows you to specify the subtype (class)">
+    </testcase>
+    <testcase name="Entity #factor allows you to specify only the loader" time="0.0000" classname="allows you to specify only the loader">
+    </testcase>
+    <testcase name="Entity #factor allows you to specify the doc and loader" time="0.0000" classname="allows you to specify the doc and loader">
+    </testcase>
+    <testcase name="Entity #factor allows you to specify the doc, loader and type (string)" time="0.0000" classname="allows you to specify the doc, loader and type (string)">
+    </testcase>
+    <testcase name="Entity #factor allows you to specify the doc, loader and type (class)" time="0.0000" classname="allows you to specify the doc, loader and type (class)">
+    </testcase>
+    <testcase name="Entity #factor supports subclassing" time="0.0000" classname="supports subclassing">
+    </testcase>
+    <testcase name="Entity #factor dresses Entity subclasses properly" time="0.0000" classname="dresses Entity subclasses properly">
+    </testcase>
+  </testsuite>
+  <testsuite name="when used without a loader" timestamp="2020-09-24T10:17:57" tests="2" file="/Users/louislambeau/Work/Quadrabee/json-api-client/tests/jsonapi/entity.spec.js" time="0.0000" failures="0">
+    <testcase name="Entity when used without a loader works as expected" time="0.0000" classname="works as expected">
+    </testcase>
+    <testcase name="Entity when used without a loader has a ensure method that resolves to the entity" time="0.0000" classname="has a ensure method that resolves to the entity">
+    </testcase>
+  </testsuite>
+  <testsuite name="when used with a loader" timestamp="2020-09-24T10:17:57" tests="9" file="/Users/louislambeau/Work/Quadrabee/json-api-client/tests/jsonapi/entity.spec.js" time="0.0860" failures="0">
+    <testcase name="Entity when used with a loader works as expected" time="0.0120" classname="works as expected">
+    </testcase>
+    <testcase name="Entity when used with a loader has an ensure method that forces loading the first time" time="0.0130" classname="has an ensure method that forces loading the first time">
+    </testcase>
+    <testcase name="Entity when used with a loader has an ensure method that reused previously loaded data the second time" time="0.0120" classname="has an ensure method that reused previously loaded data the second time">
+    </testcase>
+    <testcase name="Entity when used with a loader helps with entity relationships" time="0.0120" classname="helps with entity relationships">
+    </testcase>
+    <testcase name="Entity when used with a loader helps ensuring entity relationships are loaded 1/3" time="0.0120" classname="helps ensuring entity relationships are loaded 1/3">
+    </testcase>
+    <testcase name="Entity when used with a loader helps ensuring entity relationships are loaded 2/3" time="0.0120" classname="helps ensuring entity relationships are loaded 2/3">
+    </testcase>
+    <testcase name="Entity when used with a loader helps ensuring entity relationships are loaded 3/3" time="0.0110" classname="helps ensuring entity relationships are loaded 3/3">
+    </testcase>
+    <testcase name="Entity when used with a loader returns a catchable promise by default" time="0.0010" classname="returns a catchable promise by default">
+    </testcase>
+    <testcase name="Entity when used with a loader lets hide errors and keep internal state instead" time="0.0010" classname="lets hide errors and keep internal state instead">
+    </testcase>
+  </testsuite>
+  <testsuite name="the mock/AuthenticationService service" timestamp="2020-09-24T10:17:57" tests="0" file="/Users/louislambeau/Work/Quadrabee/json-api-client/tests/services/authentication.service.spec.js" time="0.0000" failures="0">
+  </testsuite>
+  <testsuite name="#loadProfile" timestamp="2020-09-24T10:17:57" tests="4" file="/Users/louislambeau/Work/Quadrabee/json-api-client/tests/services/authentication.service.spec.js" time="0.0020" failures="0">
+    <testcase name="the mock/AuthenticationService service #loadProfile raises an error if the user isn&apos;t logged in" time="0.0000" classname="raises an error if the user isn&apos;t logged in">
+    </testcase>
+    <testcase name="the mock/AuthenticationService service #loadProfile returns a promise" time="0.0010" classname="returns a promise">
+    </testcase>
+    <testcase name="the mock/AuthenticationService service #loadProfile calls the MyService/profile api" time="0.0000" classname="calls the MyService/profile api">
+    </testcase>
+    <testcase name="the mock/AuthenticationService service #loadProfile propagates potential errors from the MyService/profile api" time="0.0010" classname="propagates potential errors from the MyService/profile api">
+    </testcase>
+  </testsuite>
+  <testsuite name="#login" timestamp="2020-09-24T10:17:57" tests="0" file="/Users/louislambeau/Work/Quadrabee/json-api-client/tests/services/authentication.service.spec.js" time="0.0000" failures="0">
+  </testsuite>
+  <testsuite name="when successful" timestamp="2020-09-24T10:17:57" tests="5" file="/Users/louislambeau/Work/Quadrabee/json-api-client/tests/services/authentication.service.spec.js" time="0.0050" failures="0">
+    <testcase name="the mock/AuthenticationService service #login when successful returns a promise" time="0.0010" classname="returns a promise">
+    </testcase>
+    <testcase name="the mock/AuthenticationService service #login when successful calls the AuthenticationService/login api" time="0.0010" classname="calls the AuthenticationService/login api">
+    </testcase>
+    <testcase name="the mock/AuthenticationService service #login when successful saves the token in the storage" time="0.0010" classname="saves the token in the storage">
+    </testcase>
+    <testcase name="the mock/AuthenticationService service #login when successful emits the loggedIn event" time="0.0010" classname="emits the loggedIn event">
+    </testcase>
+    <testcase name="the mock/AuthenticationService service #login when successful loads the profile" time="0.0010" classname="loads the profile">
+    </testcase>
+  </testsuite>
+  <testsuite name="when unsucessful" timestamp="2020-09-24T10:17:57" tests="2" file="/Users/louislambeau/Work/Quadrabee/json-api-client/tests/services/authentication.service.spec.js" time="0.0020" failures="0">
+    <testcase name="the mock/AuthenticationService service #login when unsucessful propagates errors coming from the api" time="0.0010" classname="propagates errors coming from the api">
+    </testcase>
+    <testcase name="the mock/AuthenticationService service #login when unsucessful propagates errors coming from loadProfile" time="0.0010" classname="propagates errors coming from loadProfile">
+    </testcase>
+  </testsuite>
+  <testsuite name="#logout" timestamp="2020-09-24T10:17:57" tests="0" file="/Users/louislambeau/Work/Quadrabee/json-api-client/tests/services/authentication.service.spec.js" time="0.0000" failures="0">
+  </testsuite>
+  <testsuite name="when successful" timestamp="2020-09-24T10:17:57" tests="4" file="/Users/louislambeau/Work/Quadrabee/json-api-client/tests/services/authentication.service.spec.js" time="0.0010" failures="0">
+    <testcase name="the mock/AuthenticationService service #logout when successful returns a promise" time="0.0000" classname="returns a promise">
+    </testcase>
+    <testcase name="the mock/AuthenticationService service #logout when successful calls the AuthenticationService/logout api" time="0.0010" classname="calls the AuthenticationService/logout api">
+    </testcase>
+    <testcase name="the mock/AuthenticationService service #logout when successful removes the token from the storage" time="0.0000" classname="removes the token from the storage">
+    </testcase>
+    <testcase name="the mock/AuthenticationService service #logout when successful emits the loggedOut event" time="0.0000" classname="emits the loggedOut event">
+    </testcase>
+  </testsuite>
+  <testsuite name="when unsucessful" timestamp="2020-09-24T10:17:57" tests="1" file="/Users/louislambeau/Work/Quadrabee/json-api-client/tests/services/authentication.service.spec.js" time="0.0010" failures="0">
+    <testcase name="the mock/AuthenticationService service #logout when unsucessful propagates errors coming from the api" time="0.0010" classname="propagates errors coming from the api">
+    </testcase>
+  </testsuite>
+  <testsuite name="the mock/EntitiesService service" timestamp="2020-09-24T10:17:57" tests="0" file="/Users/louislambeau/Work/Quadrabee/json-api-client/tests/services/entities.services.spec.js" time="0.0000" failures="0">
+  </testsuite>
+  <testsuite name="#getCompanyById" timestamp="2020-09-24T10:17:57" tests="0" file="/Users/louislambeau/Work/Quadrabee/json-api-client/tests/services/entities.services.spec.js" time="0.0000" failures="0">
+  </testsuite>
+  <testsuite name="when called with an id" timestamp="2020-09-24T10:17:57" tests="2" file="/Users/louislambeau/Work/Quadrabee/json-api-client/tests/services/entities.services.spec.js" time="0.0000" failures="0">
+    <testcase name="the mock/EntitiesService service #getCompanyById when called with an id returns a loading Entity object" time="0.0000" classname="returns a loading Entity object">
+    </testcase>
+    <testcase name="the mock/EntitiesService service #getCompanyById when called with an id calls the EntitiesService/getCompany api" time="0.0000" classname="calls the EntitiesService/getCompany api">
+    </testcase>
+  </testsuite>
+  <testsuite name="the I18NService" timestamp="2020-09-24T10:17:57" tests="0" file="/Users/louislambeau/Work/Quadrabee/json-api-client/tests/services/i18n.service.spec.js" time="0.0000" failures="0">
+  </testsuite>
+  <testsuite name="the setter for locale" timestamp="2020-09-24T10:17:57" tests="2" file="/Users/louislambeau/Work/Quadrabee/json-api-client/tests/services/i18n.service.spec.js" time="0.0010" failures="0">
+    <testcase name="the I18NService the setter for locale changes the locale value" time="0.0000" classname="changes the locale value">
+    </testcase>
+    <testcase name="the I18NService the setter for locale loads all sources" time="0.0010" classname="loads all sources">
+    </testcase>
+  </testsuite>
+  <testsuite name="#addGroup" timestamp="2020-09-24T10:17:57" tests="5" file="/Users/louislambeau/Work/Quadrabee/json-api-client/tests/services/i18n.service.spec.js" time="0.0000" failures="0">
+    <testcase name="the I18NService #addGroup expects TranslationGroup as argument" time="0.0000" classname="expects TranslationGroup as argument">
+    </testcase>
+    <testcase name="the I18NService #addGroup exposes the TranslationGroup in the list of groups" time="0.0000" classname="exposes the TranslationGroup in the list of groups">
+    </testcase>
+    <testcase name="the I18NService #addGroup splits dotted namespaces into a group hierarchy" time="0.0000" classname="splits dotted namespaces into a group hierarchy">
+    </testcase>
+    <testcase name="the I18NService #addGroup support multiple groups sharing part of the hierarchy" time="0.0000" classname="support multiple groups sharing part of the hierarchy">
+    </testcase>
+    <testcase name="the I18NService #addGroup raises errors in the case of duplicated namespaces" time="0.0000" classname="raises errors in the case of duplicated namespaces">
+    </testcase>
+  </testsuite>
+  <testsuite name="the mock/SearchService service" timestamp="2020-09-24T10:17:57" tests="0" file="/Users/louislambeau/Work/Quadrabee/json-api-client/tests/services/search.service.spec.js" time="0.0000" failures="0">
+  </testsuite>
+  <testsuite name="#searchCompanies" timestamp="2020-09-24T10:17:57" tests="0" file="/Users/louislambeau/Work/Quadrabee/json-api-client/tests/services/search.service.spec.js" time="0.0000" failures="0">
+  </testsuite>
+  <testsuite name="when called with search query" timestamp="2020-09-24T10:17:57" tests="2" file="/Users/louislambeau/Work/Quadrabee/json-api-client/tests/services/search.service.spec.js" time="0.0000" failures="0">
+    <testcase name="the mock/SearchService service #searchCompanies when called with search query returns a loading Collection object" time="0.0000" classname="returns a loading Collection object">
+    </testcase>
+    <testcase name="the mock/SearchService service #searchCompanies when called with search query calls the SearchService/searchCompany API with query when present" time="0.0000" classname="calls the SearchService/searchCompany API with query when present">
+    </testcase>
+  </testsuite>
+  <testsuite name="when called without search query" timestamp="2020-09-24T10:17:57" tests="1" file="/Users/louislambeau/Work/Quadrabee/json-api-client/tests/services/search.service.spec.js" time="0.0000" failures="0">
+    <testcase name="the mock/SearchService service #searchCompanies when called without search query returns a non-loading Collection object" time="0.0000" classname="returns a non-loading Collection object">
+    </testcase>
+  </testsuite>
+  <testsuite name="#getSearchHistory" timestamp="2020-09-24T10:17:57" tests="2" file="/Users/louislambeau/Work/Quadrabee/json-api-client/tests/services/search.service.spec.js" time="0.0000" failures="0">
+    <testcase name="the mock/SearchService service #getSearchHistory returns a loading Collection object" time="0.0000" classname="returns a loading Collection object">
+    </testcase>
+    <testcase name="the mock/SearchService service #getSearchHistory calls the MyService/searchHistory api" time="0.0000" classname="calls the MyService/searchHistory api">
+    </testcase>
+  </testsuite>
+  <testsuite name="#pushSearchHistory" timestamp="2020-09-24T10:17:57" tests="2" file="/Users/louislambeau/Work/Quadrabee/json-api-client/tests/services/search.service.spec.js" time="0.0000" failures="0">
+    <testcase name="the mock/SearchService service #pushSearchHistory returns a promise" time="0.0000" classname="returns a promise">
+    </testcase>
+    <testcase name="the mock/SearchService service #pushSearchHistory calls the MyService/pushToHistory api" time="0.0000" classname="calls the MyService/pushToHistory api">
+    </testcase>
+  </testsuite>
+  <testsuite name="the at() utility" timestamp="2020-09-24T10:17:57" tests="2" file="/Users/louislambeau/Work/Quadrabee/json-api-client/tests/utils/namespaces.js" time="0.0000" failures="0">
+    <testcase name="the at() utility returns values according to their path" time="0.0000" classname="returns values according to their path">
+    </testcase>
+    <testcase name="the at() utility returns null for invalid paths" time="0.0000" classname="returns null for invalid paths">
+    </testcase>
+  </testsuite>
+  <testsuite name="the treeNormalize() utility" timestamp="2020-09-24T10:17:57" tests="7" file="/Users/louislambeau/Work/Quadrabee/json-api-client/tests/utils/namespaces.js" time="0.0020" failures="0">
+    <testcase name="the treeNormalize() utility returns a different object" time="0.0010" classname="returns a different object">
+    </testcase>
+    <testcase name="the treeNormalize() utility doesn&apos;t change objects that don&apos;t require normalisation" time="0.0000" classname="doesn&apos;t change objects that don&apos;t require normalisation">
+    </testcase>
+    <testcase name="the treeNormalize() utility convert dotted keys into a proper hierarchy" time="0.0000" classname="convert dotted keys into a proper hierarchy">
+    </testcase>
+    <testcase name="the treeNormalize() utility merges namespaces with common ancestors" time="0.0000" classname="merges namespaces with common ancestors">
+    </testcase>
+    <testcase name="the treeNormalize() utility supports a mix of dotted keys and proper hierarchy" time="0.0010" classname="supports a mix of dotted keys and proper hierarchy">
+    </testcase>
+    <testcase name="the treeNormalize() utility detects conflicts and raises errors 1/2" time="0.0000" classname="detects conflicts and raises errors 1/2">
+    </testcase>
+    <testcase name="the treeNormalize() utility detects conflicts and raises errors 2/2" time="0.0000" classname="detects conflicts and raises errors 2/2">
+    </testcase>
+  </testsuite>
+</testsuites>

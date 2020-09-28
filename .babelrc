@@ -1,0 +1,49 @@
+{
+  "env": {
+    "development": {
+      "presets": [
+        ["@babel/preset-env", {
+          "targets": {
+            "node": "6.10"
+          }
+          }]
+        ],
+        "plugins": [
+          "@babel/plugin-syntax-object-rest-spread",
+          "@babel/plugin-proposal-class-properties",
+          "@babel/transform-runtime"
+        ]
+      },
+      "browser": {
+        "presets": [
+          ["@babel/preset-env", {
+            "targets": {
+              "browsers": "last 2 versions, ie 10-11"
+            },
+            "modules": false
+            }]
+          ],
+          "plugins": [
+            "@babel/plugin-syntax-object-rest-spread",
+            "@babel/plugin-proposal-class-properties",
+            "@babel/transform-runtime"
+          ]
+        },
+        "module": {
+          "presets": [
+            ["@babel/preset-env", {
+              "targets": {
+                "node": "6.10"
+              },
+              "modules": false
+              }]
+            ],
+            "plugins": [
+              "@babel/plugin-syntax-object-rest-spread",
+              "@babel/plugin-proposal-class-properties",
+              "@babel/transform-runtime"
+            ]
+          }
+        },
+        "sourceMaps": true
+      }

@@ -1,0 +1,317 @@
+{
+  "data": {
+    "type": "Company",
+    "id": "336121470",
+    "meta": {
+      "inMyPortfolio": false
+    },
+    "attributes": {
+      "name": "Klaro App",
+      "legalForm": "SPRL",
+      "type": null,
+      "size": null,
+      "identifiers": [
+        {
+          "name": "europeanVAT",
+          "value": "BE0688516787",
+          "lastUpdate": null
+        },
+        {
+          "name": "siren",
+          "value": "BE0688516787",
+          "lastUpdate": null
+        },
+        {
+          "name": "siren",
+          "value": "BE0688516787",
+          "lastUpdate": "2015-11-14T14:04:35+00:00"
+        },
+        {
+          "name": "bvdId",
+          "value": "BE558926866",
+          "lastUpdate": "2010-03-29T06:57:07+00:00"
+        },
+        {
+          "name": "siren",
+          "value": "BE0688516787",
+          "lastUpdate": null
+        },
+        {
+          "name": "europeanVAT",
+          "value": "BE558926866",
+          "lastUpdate": null
+        },
+        {
+          "name": "lei",
+          "value": "BE558926866",
+          "lastUpdate": "1978-07-09T14:06:04+00:00"
+        },
+        {
+          "name": "bvdId",
+          "value": "BE558926866",
+          "lastUpdate": "2012-06-03T17:16:26+00:00"
+        },
+        {
+          "name": "lei",
+          "value": "BE558926866",
+          "lastUpdate": null
+        },
+        {
+          "name": "europeanVAT",
+          "value": "BE558926866",
+          "lastUpdate": null
+        }
+      ],
+      "establishment": {
+        "date": 19800000,
+        "country": "DE"
+      },
+      "activity": [
+        {
+          "name": "nace2Code",
+          "value": "2562",
+          "isPrimary": true
+        },
+        {
+          "name": "nace2Code",
+          "value": "6201",
+          "isPrimary": true
+        }
+      ],
+      "address": {
+        "street": "12 Ch. de Tervuren",
+        "zip": "1300",
+        "city": null,
+        "country": null,
+        "geocoords": null
+      },
+      "primaryGroup": {
+        "id": "405608097",
+        "name": "Klaro App"
+      },
+      "last": {
+        "riskProfile": {
+          "type": "RiskProfile",
+          "id": "abcdef123456",
+          "attributes": {
+            "lastUpdate": "2019-09-05",
+            "name": "global",
+            "score": 4,
+            "subrisks": [
+              {
+                "type": "RiskIndicator",
+                "id": "256financial",
+                "attributes": {
+                  "score": 4,
+                  "name": "financial",
+                  "lastUpdate": "2019-09-05"
+                }
+              },
+              {
+                "type": "RiskIndicator",
+                "id": "256sector",
+                "attributes": {
+                  "score": null,
+                  "name": "sector",
+                  "lastUpdate": "2019-09-05"
+                }
+              },
+              {
+                "type": "RiskIndicator",
+                "id": "256geographical",
+                "attributes": {
+                  "score": 5,
+                  "name": "geographical",
+                  "lastUpdate": "2019-09-05"
+                }
+              },
+              {
+                "type": "RiskIndicator",
+                "id": "256pep",
+                "attributes": {
+                  "score": 9,
+                  "name": "pep",
+                  "lastUpdate": "2019-09-05"
+                }
+              },
+              {
+                "type": "RiskIndicator",
+                "id": "256adverse-media",
+                "attributes": {
+                  "score": 5,
+                  "name": "adverse-media",
+                  "lastUpdate": "2019-09-05"
+                }
+              },
+              {
+                "type": "RiskIndicator",
+                "id": "256sanctions",
+                "attributes": {
+                  "score": 3,
+                  "name": "sanctions",
+                  "lastUpdate": "2019-09-05"
+                }
+              }
+            ]
+          }
+        },
+        "neighborhood": {
+          "numberOfSubsidiaryCompanies": 17,
+          "numberOfShareholderCompanies": 1,
+          "numberOfRelatedPeople": 57
+        }
+      },
+      "history": [
+        {
+          "year": 2019
+        },
+        {
+          "year": 2018,
+          "neighborhood": {
+            "numberOfSubsidiaryCompanies": 17,
+            "numberOfShareholderCompanies": 27
+          },
+          "riskProfile": {
+            "type": "RiskProfile",
+            "id": "abcdef123456",
+            "attributes": {
+              "lastUpdate": "2019-09-05",
+              "name": "global",
+              "score": 5,
+              "subrisks": [
+                {
+                  "type": "RiskIndicator",
+                  "id": "256financial",
+                  "attributes": {
+                    "score": 5,
+                    "name": "financial",
+                    "lastUpdate": "2019-09-05"
+                  }
+                },
+                {
+                  "type": "RiskIndicator",
+                  "id": "256sector",
+                  "attributes": {
+                    "score": 0,
+                    "name": "sector",
+                    "lastUpdate": "2019-09-05"
+                  }
+                },
+                {
+                  "type": "RiskIndicator",
+                  "id": "256geographical",
+                  "attributes": {
+                    "score": 5,
+                    "name": "geographical",
+                    "lastUpdate": "2019-09-05"
+                  }
+                },
+                {
+                  "type": "RiskIndicator",
+                  "id": "256pep",
+                  "attributes": {
+                    "score": 2,
+                    "name": "pep",
+                    "lastUpdate": "2019-09-05"
+                  }
+                },
+                {
+                  "type": "RiskIndicator",
+                  "id": "256adverse-media",
+                  "attributes": {
+                    "score": 0,
+                    "name": "adverse-media",
+                    "lastUpdate": "2019-09-05"
+                  }
+                },
+                {
+                  "type": "RiskIndicator",
+                  "id": "256sanctions",
+                  "attributes": {
+                    "score": 6,
+                    "name": "sanctions",
+                    "lastUpdate": "2019-09-05"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "year": 2017,
+          "riskProfile": {
+            "type": "RiskProfile",
+            "id": "abcdef123456",
+            "attributes": {
+              "lastUpdate": "2019-09-05",
+              "name": "global",
+              "score": 6,
+              "subrisks": [
+                {
+                  "type": "RiskIndicator",
+                  "id": "256financial",
+                  "attributes": {
+                    "score": 7,
+                    "name": "financial",
+                    "lastUpdate": "2019-09-05"
+                  }
+                },
+                {
+                  "type": "RiskIndicator",
+                  "id": "256sector",
+                  "attributes": {
+                    "score": 2,
+                    "name": "sector",
+                    "lastUpdate": "2019-09-05"
+                  }
+                },
+                {
+                  "type": "RiskIndicator",
+                  "id": "256geographical",
+                  "attributes": {
+                    "score": 8,
+                    "name": "geographical",
+                    "lastUpdate": "2019-09-05"
+                  }
+                },
+                {
+                  "type": "RiskIndicator",
+                  "id": "256pep",
+                  "attributes": {
+                    "score": 3,
+                    "name": "pep",
+                    "lastUpdate": "2019-09-05"
+                  }
+                },
+                {
+                  "type": "RiskIndicator",
+                  "id": "256adverse-media",
+                  "attributes": {
+                    "score": 1,
+                    "name": "adverse-media",
+                    "lastUpdate": "2019-09-05"
+                  }
+                },
+                {
+                  "type": "RiskIndicator",
+                  "id": "256sanctions",
+                  "attributes": {
+                    "score": 8,
+                    "name": "sanctions",
+                    "lastUpdate": "2019-09-05"
+                  }
+                }
+              ]
+            }
+          }
+        }
+      ]
+    },
+    "links": {
+      "self": "/v1/entities/companies/336121470"
+    }
+  },
+  "links": {
+    "self": null
+  }
+}
